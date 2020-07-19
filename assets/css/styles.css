@@ -221,15 +221,50 @@ img{
 
 /*BUTTONS*/
 .button{
-  display: inline-block;
-  background-color: var(--first-color);
-  color: #fff;
-  padding: .75rem 2.5rem;
-  font-weight: var(--font-semi);
-  border-radius: .5rem;
+  border: none;
+  display: block;
+  position: relative;
+  padding: 0.5em 2.2em;
+  font-size: 20px;
+  color: var(--first-color); 
+  background: transparent;
+  line-height: 40px;
+  cursor: pointer;
+  user-select: none;
+  height: 60px;
+  width: 200px;
+  text-align: center;
+  overflow: hidden;
 }
-.button:hover{
-  box-shadow: 0 10px 36px rgba(0,0,0,.15);
+.button span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: -1;
+  border: 5px solid var(--first-color);
+  color: var(--first-color);
+}
+.button span::before {
+  content: "";
+  position: absolute;
+  width: 8%;
+  height: 500%;
+  background: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-60deg);
+  transition: all .3s;
+}
+.button:hover span::before, .button:focus span::before{
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 100%;
+  background: var(--first-color);
+}
+.button:hover, .button:focus{
+  color: white;
 }
 
 /* ===== ABOUT =====*/
