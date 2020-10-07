@@ -448,3 +448,6 @@ img{
     right: 10%;
   }
 }
+textarea {
+  resize: none;
+}
