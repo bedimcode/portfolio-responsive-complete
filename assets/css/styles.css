@@ -191,6 +191,7 @@ img{
 }
 .home__data{
   align-self: center;
+  z-index: 100;
 }
 .home__title{
   font-size: var(--big-font-size);
@@ -242,6 +243,7 @@ img{
 }
 .about__img{
   justify-self: center;
+  z-index: 10;
 }
 .about__img img{
   width: 200px;
