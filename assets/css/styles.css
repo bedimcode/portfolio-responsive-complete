@@ -289,15 +289,15 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 95%;
+  width: 70%;
 }
 .skills__css{
-  width: 85%;
+  width: 60%;
 }
 .skills__js{
-  width: 65%;
+  width: 70%;
 }
-.skills__ux{
+.skills__python{
   width: 85%;
 }
 .skills__img{
@@ -428,8 +428,6 @@ img{
   }
   .work__container{
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2,1fr);
-    column-gap: 2rem;
   }
   .contact__form{
     width: 360px;
