@@ -97,9 +97,6 @@ img{
 .bd-grid{
     max-width: 1024px;
     display: grid;
-    grid-template-columns: 100%;
-    grid-column-gap: 2rem;
-    width: calc(100% - 2rem);
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
 }
@@ -181,7 +178,6 @@ img{
 
 /*===== HOME =====*/
 .home{
-    height: calc(100vh - 3rem);
     row-gap: 1rem;
 
     &__data{
@@ -214,7 +210,14 @@ img{
         position: absolute;
         right: 0;
         bottom: 0;
-        width: 295px;
+        width: 260px;
+    }
+    &__blob{
+        fill: var(--first-color);
+
+        &-img{
+            width: 360px;
+        }
     }
 }
 
@@ -226,6 +229,7 @@ img{
     padding: .75rem 2.5rem;
     font-weight: var(--font-semi);
     border-radius: .5rem; 
+    transition: .3s;
 
     &:hover{
         box-shadow: 0px 10px 36px rgba(0,0,0,.15);
@@ -321,7 +325,6 @@ img{
         
         & img{
             transition: 1s;
-            cursor: pointer;
 
             &:hover{
                 transform: scale(1.1);
@@ -371,6 +374,9 @@ img{
         font-size: 1.5rem;
         color: #fff;
         margin: 0 var(--mb-2);
+    }
+    &__copy{
+        font-size: var(--smaller-font-size);
     }
 }
 
