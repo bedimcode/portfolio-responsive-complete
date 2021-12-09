@@ -2,48 +2,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 /*===== VARIABLES CSS =====*/
-:root{
-    --header-height: 3rem;
+--header-height: 3rem;
     --font-semi: 600;
-}
 
-/*===== Colores =====*/
-:root{
-    --first-color: #4070F4;
-    --second-color: #0E2431;
-}
+    /*===== Colores =====*/
+    /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+    /* HSL color mode */
+    --hue-color: 224;
+    --first-color: hsl(var(--hue-color), 89%, 60%);
+    --second-color: hsl(var(--hue-color), 56%, 12%);
 
-/*===== Fuente y tipografia =====*/
-:root{
+    /*===== Fuente y tipografia =====*/
     --body-font: 'Poppins', sans-serif;
 
     --big-font-size: 2rem;
     --h2-font-size: 1.25rem;
-    --normal-font-size: 0.938rem;
+    --normal-font-size: .938rem;
+    --smaller-font-size: .75rem;
 
-    @media screen and (min-width: 768px){
-        --big-font-size: 3.5rem;
-        --h2-font-size: 2rem;
-        --normal-font-size: 1rem;
-    }
-}
-
-/*===== Margenes =====*/
-:root{
-    --mb-1: 0.5rem;
+    /*===== Margenes =====*/
     --mb-2: 1rem;
-    --mb-3: 1.5rem;
     --mb-4: 2rem;
     --mb-5: 2.5rem;
     --mb-6: 3rem;
-}
 
-/*===== z index =====*/
-:root{
+    /*===== z index =====*/
     --z-back: -10;
-    --z-normal: 1;
-    --z-tooltip: 10;
     --z-fixed: 100;
+
+    @media screen and (min-width: 968px){
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --smaller-font-size: .875rem;
 }
 
 /*===== BASE =====*/
@@ -73,7 +64,7 @@ a{
 img{
     max-width: 100%;
     height: auto;
-    display: block; // borra los espacios en blanco
+    display: block;
 }
 
 /*===== CLASS CSS ===== */
