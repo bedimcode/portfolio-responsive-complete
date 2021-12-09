@@ -475,7 +475,7 @@ img {
     top: 3rem;
   }
   .nav {
-    height: calc(var(--header-height) + 1rem);
+    height: calc(var(--header-height) + 1.5rem);
   }
   .nav__list {
     display: flex;
