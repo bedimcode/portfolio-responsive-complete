@@ -303,6 +303,9 @@ img{
 .skills__img{
   border-radius: .5rem;
 }
+.skills__php{
+  width: 75%;
+}
 
 /* ===== WORK =====*/
 .work__container{
