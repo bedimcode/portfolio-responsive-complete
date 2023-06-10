@@ -209,7 +209,10 @@ img {
 
 .home__social {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+
+  
+
 }
 
 .home__social-icon {
@@ -217,6 +220,7 @@ img {
   margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
+  padding: 12px 10px;
 }
 
 .home__social-icon:hover {
@@ -232,10 +236,13 @@ img {
 
 .home__blob {
   fill: var(--first-color);
+  
 }
 
 .home__blob-img {
   width: 360px;
+  
+   
 }
 
 /*BUTTONS*/
@@ -497,9 +504,11 @@ img {
   .home__img {
     width: 400px;
     bottom: 10%;
+    align-items: center;
+    
   }
   .about__container {
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
   .about__img img {
     width: 300px;
