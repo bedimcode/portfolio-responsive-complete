@@ -49,6 +49,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+  
 }
 
 h1, h2, p {
@@ -69,6 +70,9 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+span{
+  color:blue;
 }
 
 /*===== CLASS CSS ===== */
@@ -163,6 +167,8 @@ img {
 
 .nav__logo {
   color: var(--second-color);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 20px;
 }
 
 .nav__toggle {
@@ -275,7 +281,7 @@ img {
 }
 
 .about__img img {
-  width: 200px;
+  width: 120px;
   border-radius: .5rem;
 }
 
@@ -347,24 +353,71 @@ img {
 }
 
 /* ===== WORK =====*/
-.work__container {
+
+
+
+
+.edu__container {
   row-gap: 2rem;
+  width: 300px;
+  padding-top: 4rem;
+ 
 }
 
-.work__img {
-  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
+.edu__subtitle {
+  margin-bottom: var(--mb-2);
+}
+
+.edu__text {
+  margin-bottom: var(--mb-4);
+}
+
+.edu__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  font-weight: var(--font-semi);
+  padding: .5rem 1rem;
+  margin-bottom: var(--mb-4);
   border-radius: .5rem;
-  overflow: hidden;
+  box-shadow: 0px 4px 25px rgba(14, 36, 49, 0.15);
 }
 
-.work__img img {
-  transition: 1s;
+
+
+.edu__names {
+  display: flex;
+  align-items: center;
 }
 
-.work__img img:hover {
-  transform: scale(1.1);
+.edu__bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: var(--first-color);
+  height: .25rem;
+  border-radius: .5rem;
+  z-index: var(--z-back);
 }
 
+.edu__10th {
+  width: 82%;
+}
+
+.edu__12th {
+  width: 86%;
+}
+
+.edu__college{
+  width: 88%;
+}
+
+
+
+.edu__img {
+  border-radius: .5rem;
+}
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
