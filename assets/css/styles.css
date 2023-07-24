@@ -528,3 +528,6 @@ img {
     width: 450px;
   }
 }
+textarea {
+  resize: none;
+}
