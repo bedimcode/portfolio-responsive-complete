@@ -102,6 +102,7 @@ img {
 .bd-grid {
   max-width: 1024px;
   display: grid;
+  
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
 }
@@ -112,7 +113,8 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-color: var(--first-color);
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
 }
 
@@ -123,6 +125,8 @@ img {
   justify-content: space-between;
   align-items: center;
   font-weight: var(--font-semi);
+  background-color: var(--first-color);
+
 }
 
 @media screen and (max-width: 767px) {
@@ -140,6 +144,8 @@ img {
 
 .nav__item {
   margin-bottom: var(--mb-4);
+ 
+  
 }
 
 .nav__link {
@@ -162,7 +168,8 @@ img {
 }
 
 .nav__logo {
-  color: var(--second-color);
+  color: white;
+  font-size: 25px;
 }
 
 .nav__toggle {
