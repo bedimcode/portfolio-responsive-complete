@@ -49,6 +49,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   color: var(--second-color);
+ 
 }
 
 h1, h2, p {
@@ -378,7 +379,22 @@ img {
   cursor: pointer;
   margin-left: auto;
 }
+/* ======animation===== */
+.wrap-2 {
+  position: fixed;
+  z-index: -30;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  margin: auto;
+}
 
+canvas {
+  width: 100%;
+  height: 100%;
+}
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--second-color);
