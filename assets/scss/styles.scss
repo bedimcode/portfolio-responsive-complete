@@ -163,7 +163,7 @@ img{
     }
 }
 /*Active menu*/
-.active::after{
+.active-link::after{
     position: absolute;
     content: '';
     width: 100%;
