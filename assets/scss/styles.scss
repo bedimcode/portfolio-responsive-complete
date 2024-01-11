@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 /*===== VARIABLES CSS =====*/
---header-height: 3rem;
+:root{
+    --header-height: 3rem;
     --font-semi: 600;
-
+    
     /*===== Colores =====*/
     /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
     /* HSL color mode */
@@ -35,6 +36,7 @@
         --h2-font-size: 2rem;
         --normal-font-size: 1rem;
         --smaller-font-size: .875rem;
+    }
 }
 
 /*===== BASE =====*/
@@ -161,7 +163,7 @@ img{
     }
 }
 /*Active menu*/
-.active::after{
+.active-link::after{
     position: absolute;
     content: '';
     width: 100%;
@@ -442,7 +444,7 @@ img{
     }
 }
 
-@media screen and(min-width: 768px){
+@media screen and (min-width: 768px){
     body{
         margin: 0;
     }
