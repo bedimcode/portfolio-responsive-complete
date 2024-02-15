@@ -260,6 +260,7 @@ img {
 }
 .skills__text {
   margin-bottom: var(--mb-4);
+  text-align: center;
 }
 .skills__data {
   display: flex;
@@ -306,6 +307,7 @@ img {
   transition: 1s;
   border-radius: 0.5rem;
   overflow: hidden;
+  width: 100px;
 }
 .skills__img img {
   transition: 1s;
@@ -407,12 +409,10 @@ img {
     text-align: initial;
   }
   .skills__container {
-    grid-template-columns: repeat(3, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
   }
   .work__container {
-    grid-template-columns: repeat(2, 1fr);
     column-gap: 2rem;
     padding-top: 2rem;
   }
@@ -470,7 +470,7 @@ img {
     width: 300px;
   }
   .skills__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     column-gap: 2rem;
   }
   .work__container {
