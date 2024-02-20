@@ -257,6 +257,7 @@ img {
 }
 .skills__subtitle {
   margin-bottom: var(--mb-2);
+  text-align: center;
 }
 .skills__text {
   margin-bottom: var(--h2-font-size);
@@ -370,7 +371,7 @@ img {
   margin-bottom: var(--mb-4);
 }
 .footer__icon {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #fff;
   margin: 0 var(--mb-2);
 }
@@ -613,15 +614,7 @@ header h1{
   width: 100%;
   text-align: center;
   transition: 1s;
-  overflow: hidden;
-  width: 100px;
 }
-/* .skills__img {
-  transition: 1s;
-  border-radius: 0.5rem;
-  overflow: hidden;
-  width: 100px;
-} */
 
 .flag-wrapper {
   text-align: center;
