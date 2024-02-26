@@ -360,6 +360,26 @@ img {
 }
 
 /* ===== CONTACT =====*/
+.contact__block {
+  display: block;
+  width: 28%;
+  justify-items: center;
+  padding: 2em;
+  white-space: nowrap;
+}
+.contact__title {
+  width: 50%;
+  padding: 1em;
+  margin: 0.5em;
+  font-weight: normal;
+}
+.contact__details {
+  width: 50%;
+  padding: 1em;
+  margin: auto;
+  position: absolute;
+  right: 0;
+}
 .contact__input {
   width: 100%;
   font-size: var(--normal-font-size);
@@ -716,7 +736,6 @@ header h1{
 
 .pos_title {
   position: relative;
-  /* margin: 1em 0em 0 1em; */
   padding: 1em;
   font-weight: bold;
 }
