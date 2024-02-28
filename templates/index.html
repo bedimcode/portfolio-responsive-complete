@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}" type="text/css">
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
@@ -71,7 +71,7 @@
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
-                        <img src="assets/img/ahmet_col_logo.jpeg" alt="">
+                        <img src="static/assets/img/ahmet_col_logo.jpeg" alt="">
                     </div>
                     
                     <div>
@@ -95,31 +95,31 @@
                 </h2>
                 <div class="skills__container bd-grid">
                     <a href="" class="skills__img">
-                        <img src="assets/img/python_logo_png.png" alt="">
+                        <img src="static/assets/img/python_logo_png.png" alt="">
                     </a>
                     <a href="" class="skills__img">
-                        <img src="assets/img/django_logo.png" alt="">
+                        <img src="static/assets/img/django_logo.png" alt="">
                     </a>
                     <a href="" class="skills__img">
-                        <img src="assets/img/postgresql_logo.png" alt="">
+                        <img src="static/assets/img/postgresql_logo.png" alt="">
                     </a>
                     <a href="" class="skills__img">
-                        <img src="assets/img/microsoft-sql-server.png" alt="">
+                        <img src="static/assets/img/microsoft-sql-server.png" alt="">
                     </a>
                     <a href="" class="skills__img">
-                        <img src="assets/img/git_logo.png" alt="">
+                        <img src="static/assets/img/git_logo.png" alt="">
                     </a>
                     <a href="" class="skills__img">
-                        <img src="assets/img/docker_logo.png" alt="">
+                        <img src="static/assets/img/docker_logo.png" alt="">
                     </a>
                     <a href="" class="skills__img">
-                        <img src="assets/img/kubernetes_logo.png" alt="">
+                        <img src="static/assets/img/kubernetes_logo.png" alt="">
                     </a>
                     <a href="" class="skills__img">
-                        <img src="assets/img/html_css_logo.jpeg" alt="">
+                        <img src="static/assets/img/html_css_logo.jpeg" alt="">
                     </a>
                     <a href="" class="skills__img">
-                        <img src="assets/img/Microsoft-Office-logo.png" alt="">
+                        <img src="static/assets/img/Microsoft-Office-logo.png" alt="">
                     </a>
                 </div>
             </section>
@@ -225,11 +225,12 @@
                 </div>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
-                        <input type="text" placeholder="Name" class="contact__input">
-                        <input type="mail" placeholder="Email" class="contact__input">
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <input type="button" value="Send" class="contact__button button">
+                    <form action="/submit_form" method="post" class="contact__form">
+                        <input type="text" name="name" placeholder="Name" class="contact__input">
+                        <input type="mail" name="email" placeholder="Email" class="contact__input">
+                        <textarea name="message" placeholder="Message" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <!-- <input type="button" value="Send" class="contact__button button"> -->
+                        <button class="contact__button button" type="submit">Submit</button>
                     </form>
                 </div>
             </section>
@@ -250,6 +251,6 @@
         <script src="https://unpkg.com/scrollreveal"></script>
 
         <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
+        <script src="static/assets/js/main.js"></script>
     </body>
 </html>
