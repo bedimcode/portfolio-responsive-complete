@@ -1,0 +1,12 @@
+---
+- hosts: servers
+  tasks:
+
+  - name: Stop old container
+    shell: docker rm -f myapp || true
+
+  - name: Pull latest image
+    shell: docker pull venkatsaireddy/app:latest
+
+  - name: Run container
+    shell: docker run -d -p 80:80 --name myapp venkatsaireddy/app:latest
